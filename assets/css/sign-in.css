@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(../img/bg.jpg);
+    --darkViolet: #9400D3;
+    --lavender: #E6E6FA;
+    --dark: #3a3939;
+    font-family: Cardo;
+}
+
+.navbar {
+    background-color: transparent;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    color: var(--darkViolet);
+}
+.navbar-brand:hover {
+    color: var(--darkViolet);
+}
+.nav-link {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--lavender);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color 1s ease-in-out;
+}
+.nav-link:hover {
+    border-bottom: 1px solid var(--darkViolet);
+    color: var(--lavender);
+}
+.navbar-nav .nav-link.active {
+    color: var(--darkViolet);
+    
+}
+
+.header {
+    text-align: center;
+}
+.header .h1 {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 60px;
+    color: var(--darkViolet);
+}
+.header .p {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--lavender);
+}
+.header .p a {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--darkViolet);
+    text-decoration: none;
+}
+.header .form {
+    width: 50%;
+    margin: auto;
+}
+.header .form label {
+    color: var(--lavender);
+}
+.header .form .btn {
+    border: none;
+    background-color: var(--lavender);
+    color: var(--darkViolet);
+    transition: 1s;
+}
+.header .form .btn:hover {
+    background-color: var(--darkViolet);
+    color: var(--lavender);
+}
+.header .form .btn a {
+    border: none;
+    background-color: var(--lavender);
+    color: var(--darkViolet);
+    transition: 1s;
+    text-decoration: none;
+}
+.header .form .btn:hover a{
+    background-color: var(--darkViolet);
+    color: var(--lavender);
+}
+.header .form .modal .modal-content {
+    background-color: var(--dark);
+}
+.header .form .modal .modal-content h1, .header .form .modal .modal-content button {
+    color: var(--darkViolet);
+}
+
+.footer .container .other .link {
+    transition: 1s;
+    text-decoration: none;
+    color: var(--lavender);
+    border-right: 2px solid var(--lavender);
+    font-size: 18px;
+}
+.footer .container .other .link:hover {
+    color: var(--darkViolet);
+}
+.footer .container .other .links {
+    border: none;
+}
+.footer .container .social .account {
+    background-color: var(--dark);
+    transition: 1s;
+    font-size: 18px;
+    color: var(--lavender);
+}
+.footer .container .social .account:hover {
+    background-color: var(--darkViolet);
+}

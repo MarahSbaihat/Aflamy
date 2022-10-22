@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="auther" content="">
+    <link rel="icon" href="assets/img/film.png">
+    <title>Aflamy</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/sign-in.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Aflamy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-capitalize" href="index.html">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize active" href="sign-in.html">log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1 class="h1 text-capitalize my-5">aflamy</h1>
+      <p class="p">Hello! how are you today...</p>
+      <p class="p">You can join us to enjoy just Log in or Sign up</p>
+      <form class="form">
+        <label for="exampleInputEmail1" class="form-label mt-2">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1 emails" aria-describedby="emailHelp">
+        <label for="exampleInputPassword1" class="form-label mt-2">password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1 passwords" aria-describedby="passwordHelp">
+        <div class="buttons mb-5 mt-3">
+          <button class="btn mx-2 change-color login"><a class="login" href="movie.html">Log in</a></button>
+          <!-- Button trigger modal -->
+          <button type="button mx-2" class="btn change-color" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="form">
+                    <label for="exampleInputEmail1" class="form-label mt-2">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1 email" aria-describedby="emailHelp">
+                    <label for="exampleInputPassword1" class="form-label mt-2">password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1 password" aria-describedby="passwordHelp">
+                    <label for="exampleInputName1" class="form-label mt-2">Your name</label>
+                    <input type="name" class="form-control" id="exampleInputName1 name" aria-describedby="nameHelp">
+                    <label for="exampleInputDate1" class="form-label mt-2">Date of Birth</label>
+                    <input type="date" class="form-control" id="exampleInputDate1 birthDay" aria-describedby="dateHelp">
+                    <label for="exampleInputaddition1" class="form-label mt-2">sex</label>
+                    <div>
+                      <form class="d-block">
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">female</label><br>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">male</label>
+                      </form>
+                    </div>
+                    <label for="exampleInputPhone1" class="form-label mt-2">Phone number</label>
+                    <input type="phone" class="form-control" id="exampleInputPhone1 phoneNumber" aria-describedby="phoneHelp">
+                    <label for="exampleInputaddition1" class="form-label mt-2">Choose which edition you want ...</label>
+                    <div>
+                      <form class="d-block">
+                        <input type="radio" id="Basic" name="fav_language" value="Basic">
+                        <label for="Basic">Basic ( Price : 5$ )</label><br>
+                        <input type="radio" id="Standard" name="fav_language" value="Standard">
+                        <label for="Standard">Standard ( Price : 8$ )</label><br>
+                        <input type="radio" id="Premium" name="fav_language" value="Premium">
+                        <label for="Premium">Premium ( Price : 10$ )</label>
+                      </form>
+                    </div>
+                    <label for="exampleInputPay1" class="form-label mt-2">How do you want to pay ?</label>
+                    <input type="pay" class="form-control" id="exampleInputPay1 pay" aria-describedby="payHelp">
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary"id="account"><a href="movie.html">Create account</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="p mt-3">Do you forget your <a href="#"> Password </a> ...</p>
+        </div>
+      </form>
+    </header>
+
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="other d-flex justify-content-center w-100">
+          <a class="text-capitalize px-3 my-3 link" href="#">call us</a>
+          <a class="text-capitalize px-3 my-3 link" href="#">news</a>
+          <a class="text-capitalize px-3 my-3 link" href="#">rules</a>
+          <a class="text-capitalize px-3 my-3 link" href="#">report</a>
+          <a class="text-capitalize px-3 my-3 link links" href="#">apps</a>
+        </div>
+        <div class="social d-flex justify-content-center w-100">
+          <a class=" px-2 py-2 mx-2 my-2 account rounded" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class=" px-2 py-2 mx-2 my-2 account rounded" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class=" px-2 py-2 mx-2 my-2 account rounded" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class=" px-2 py-2 mx-2 my-2 account rounded" href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a class=" px-2 py-2 mx-2 my-2 account rounded" href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- j query -->
+    <script src="assets/js/jquery-3.6.1.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+    <!-- custom js
+    <script src="assets/js/crud.js"></script> -->
+  </body>
+</html>
